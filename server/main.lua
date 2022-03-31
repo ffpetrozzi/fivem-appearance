@@ -1,6 +1,7 @@
 local identifiers = {}
+local VersionCheck = true
 
-if Config.VersionCheck then
+if VersionCheck then
     if not lib then return end
 
     lib.versionCheck('overextended/fivem-appearance')
