@@ -1,5 +1,11 @@
 local identifiers = {}
 
+if Config.VersionCheck then
+    if not lib then return end
+
+    lib.versionCheck('overextended/fivem-appearance')
+end
+
 local function saveAppearance(identifier, appearance)
 	SetResourceKvp(('%s:appearance'):format(identifier), json.encode(appearance))
 end
