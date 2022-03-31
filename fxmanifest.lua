@@ -14,6 +14,10 @@ description 'A flexible player customization script for FiveM.'
 repository 'https://github.com/overextended/fivem-appearance/'
 version '1.2.0'
 
+shared_scripts { 
+    '@ox_lib/init.lua'
+}
+
 client_scripts {
 	'client/constants.lua',
 	'client/utils.lua',
